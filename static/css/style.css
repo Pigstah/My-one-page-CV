@@ -40,6 +40,11 @@ body {
 	justify-content: right;
 }
 
+.logo {
+	display: flex;
+	justify-content: flex-start;
+}
+
 .about,
 .skills,
 .contact {
@@ -56,7 +61,7 @@ body {
 	color: #333;
 	background-color: #ffcc00;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .header {
@@ -64,7 +69,6 @@ body {
 	height: 600px;
 	display: flex;
 	justify-content: space-around;
-	align-items: flex-start;
 	flex-direction: column;
 }
 
