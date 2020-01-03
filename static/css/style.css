@@ -12,170 +12,262 @@ body {
 
 /* Menu Styling */
 
-.menu-container {
-	/*color: #333;*/
+.menu-section {
+	padding-bottom: 3rem;
 	background-color: #ffcc00;
+}
+
+.menu-container {
 	font-size: 2em;
 	padding: 20px 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	position: fixed;
-}
-
-.menu-container img {
-	width: 30px;
-	height: 30px
-}
-
-.menu {
-	/* border: 1px solid #fff; for debugging */
-	display: flex;
-	justify-content: space-between;
-}
-
-.links {
-	/* border: 1px solid #fff;  for debugging */
-	display: flex;
-	justify-content: right;
 }
 
 .logo {
-	display: flex;
-	justify-content: flex-start;
+	margin-left: 40px
 }
 
-.about,
-.skills,
-.contact {
-	margin-right: 20px;
+.logo img {
+	width: 40px;
+	height: 40px
+}
+
+.main-nav {
+	list-style-type: none;
+	display: none;
+}
+
+.nav-links {
+	text-decoration: none;
+}
+
+.main-nav li {
+	text-align: center;
+	margin: 0 20px 0 0;
+	margin: 15px auto;
+}
+
+.navbar-toggle {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer; 
+	font-size: 24px;
+	margin-top: 10px;
+}
+
+.active {
+	display: block;
+}
+
+.main-nav a:hover {
+	background-color: #ffd900;
+	color: black;
+}
+
+@media screen and (min-width: 768px) {
+	
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 0;
+		height: 70px;
+		align-items: center;
+		background-color: #ffcc00;
+	}
+	
+	.main-nav {
+		display: flex;
+		margin-right: 30px;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	.main-nav li {
+		margin: 0;
+	}  
+
+	.nav-links {
+		margin-left: 40px;
+	}
+
+	.logo {
+		margin-top: 0;
+
+	}
+
+	.navbar-toggle {
+		display: none;
+	}
+	
+	.main-nav a:hover {
+		background-color: #ffd900;
+		color: black;
+	}
 }
 
 /* Header Styling */
 
 .header-section {
-	background-color: #ffcc00;
-}
-
-.header-container {
-	color: #333;
-	background-color: #ffcc00;
-	display: flex;
-	justify-content: flex-start;
-}
-
-.header {
-	width: 1000px;
-	height: 600px;
-	display: flex;
-	justify-content: space-around;
-	flex-direction: column;
-}
-
-.after1 {
-	content: '';
-	background: #333;
-	position: absolute;
-	height: 12px;
-	width: 12em;
-}
-
-.intro {
-	font-size: 4em;
-	font-weight: bold;
-}
-
-.statement {
-	font-size: 2em;
-	font-weight: bold;
-}
-
-/* About Styling */
-
-.about-section {
 	padding-top: 3rem;
 	padding-right: 3rem;
 	padding-left: 3em;
 	background-color: #ffcc00;
 }
 
-.about-container {
+.header-container {
+	/*height: -webkit-fill-available;*/
 	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	margin: auto;
 }
 
-.about-heading h1 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding-bottom: 3rem;
-	padding-top: 3rem;
+.header h1 {
+	font-size: 4em;
+	font-weight: bold;
+	padding: 30px
 }
 
-.after2 {
-	margin-left: 33rem;
+.title {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 30px;
+}
+
+.after1 {
 	content: '';
 	background: #333;
 	height: 12px;
 	width: 12em;
+	margin: auto;
 }
 
-.about-img {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding-bottom: 3rem;
-}
-.about-img img {
-	display: flex;
-	max-width: 200px;
-	height: 200px;
+/*@media screen and (min-width: 768px) {
+	.header-container {
+		flex-direction: row;
+		background-color: #ffcc00;
+	}
+	.header-container > h1, 
+	.header-container > h2 {
+		flex: 0 0 20vw;
+	}  
+}*/
+
+/* About Styling */
+
+.about-section {
 	background-color: #ffcc00;
 }
 
-.about-me h1 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding-bottom: 3rem;
-	padding-top: 3rem;
-}
-
 .about-list {
-	display: flex;
-	padding-top: 3rem;
+	display: block
 }
 
-.about-list-items {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	list-style-type: none;
+.about img {
+	width: 100%;
 }
 
-.about-list-items li {
-	margin: 0 0 70px 0;
+.about-me h1 {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 30px;
+	text-align: center;
 }
 
-.about-img2 {
-	width: 500px;
-	display: flex;
-	flex-wrap: wrap;
+.after2 {
+	content: '';
+	background: #333;
+	height: 12px;
+	width: 12em;
 	margin: auto;
-	margin-right: 0;
-	align-self: flex-end;
 }
 
-.about-img2 img {
-	display: flex;
-	max-width: 250px;
-	height: 250px;
-	padding: 10px;
+@media screen and (min-width: 768px) {
+	.about-section {
+		padding-top: 3rem;
+		padding-right: 3rem;
+		padding-left: 3em;
+		background-color: #ffcc00;
+	}
+	.about-container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+
+	.about-heading h1 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-bottom: 3rem;
+		padding-top: 3rem;
+	}
+
+	.after2 {
+		content: '';
+		background: #333;
+		height: 12px;
+		width: 12em;
+		margin: auto;
+	}	
+
+	.about-img {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-bottom: 3rem;
+	}
+	.about-img img {
+		display: flex;
+		max-width: 200px;
+		height: 200px;
+		background-color: #ffcc00;
+	}
+
+	.about-me h1 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-bottom: 3rem;
+		padding-top: 3rem;
+	}
+
+	.about-list {
+		display: flex;
+		padding-top: 3rem;
+	}
+
+	.about-list-items {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		list-style-type: none;
+	}
+
+	.about-list-items li {
+		margin: 0 0 70px 0;
+	}
+
+	.about-img2 {
+		width: 500px;
+		display: flex;
+		flex-wrap: wrap;
+		margin: auto;
+		margin-right: 0;
+		align-self: flex-end;
+	}
+
+	.about-img2 img {
+		display: flex;
+		max-width: 250px;
+		height: 250px;
+		padding: 10px;
+	}
 }
 
 /* Skills Section */
@@ -209,11 +301,11 @@ body {
 }
 
 .after2 {
-	margin-left: 33rem;
 	content: '';
 	background: #333;
 	height: 12px;
 	width: 12em;
+	margin: auto;
 }
 
 .skills-img {
@@ -341,11 +433,11 @@ body {
 }
 
 .after3 {
-	margin-left: 10rem;
 	content: '';
 	background: #333;
 	height: 12px;
 	width: 11em;
+	margin: auto;
 }
 
 .footer-one,
@@ -353,4 +445,3 @@ body {
 	background-color: #ffcc00;
 	flex: 2;
 }
-
