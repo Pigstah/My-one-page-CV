@@ -6,7 +6,6 @@
 body {
   font-family: 'Courier new', Courier, monospace !important;
   letter-spacing: 0.0625em;
-  color: #333;
 }
 
 /* Menu Styling */
@@ -122,7 +121,6 @@ body {
 
 .header-section {
   background-color: #ffcc00;
-  padding: 3rem;
 }
 
 .header-container {
@@ -132,6 +130,7 @@ body {
   align-items: center;
   text-align: center;
   margin: auto;
+  padding-top: 3rem;
 }
 
 .header h1 {
@@ -155,16 +154,57 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  
+  .header-section {
+    background-color: #ffcc00;
+    padding: 12rem;
+    font-color: #333;
+  }
+
   .header-container {
     height: -webkit-fill-available;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .after1 {
+    content: '';
+    background: #333;
+    height: 12px;
+    width: 12em;
+    margin: auto;
+    font-color: #ffffff !important;
+  }
+
+  .background-image {
+    background-image: url('/static/img/pastel.jpeg');
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header h1 {
+    font-size: 4em;
+    font-weight: bold;
+    padding: 30px;
+    font-color: #ffffff !important;
+  }
+
+  .header h1,
+  .header p,
+  .header h2 {
+    font-color: #ffffff !important;
   }
 }
+
+/* About Styling */
 .about-section {
   background-color: #ffcc00;
   padding: 12px;
 }
 
-/* About Styling */
 .about-me h1 {
   font-weight: bold;
   padding: 3rem;
@@ -516,7 +556,7 @@ body {
 /*Download Styling*/
 
 .download-section {
- background-color: #ffcc00;
+  background-color: #ffcc00;
 }
 
 .download-header {
@@ -525,7 +565,7 @@ body {
 }
 
 .download-header h1 {
- padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .download-pdf {
@@ -570,7 +610,6 @@ body {
     justify-content: center;
     padding: 50px;
     padding-bottom: 25px;
-    margin-top: 50px;
   }
 
   .btn {
@@ -590,22 +629,22 @@ body {
 /* Footer Styling */
 
 .footer-section {
- background-color: #ffcc00;
+  background-color: #ffcc00;
 }
 
 .footer-item {
- display: block;
- width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .social-media {
- display: block;
- text-align: center;
- font-size: 55px;
+  display: block;
+  text-align: center;
+  font-size: 55px;
 }
 
 .clickable {
- color: #333;
+  color: #333;
 }
 
 @media screen and (min-width: 768px) {
