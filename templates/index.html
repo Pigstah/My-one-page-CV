@@ -1,107 +1,181 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
-	<meta charset='UTF-8'/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Pig.Code</title>
-	<link rel="stylesheet" href="/static/css/style.css">
-	<link rel="stylesheet" href="/static/fontawesome/css/all.css">
-</head>
-<body>
-<section id='menu' class='menu-section'>
-<div class='menu-container'>
-	<nav>
-	<div class='menu'>
-		<div class='logo'><img src='static/img/pig3.png'/></div>
-		<div class='links'>	
-			<div class='about'>About</div>	
-			<div class='skills'>Skills</div>	
-			<div class='contact'>Contact</div>
-		</div>
-	</div>
-	</nav>
-</div>
-</section>
-<section id='header' class='header-section'>
-<div class='header-container'>
-	<div class='header'>
-		<h1 class='intro'>Matthew <br> Pigram</h1>
-		<p class=after1></P>
-		<div>
-		<h2 class='statement'>Linux/Windows System Administrator</h2>
-	</div>
-</div>
-</section>
-<section id='about' class='about-section'>
-<div class='about-container'>
-	<div class='about-me'>
-		<h1> Get to know me... </h1>
-		<p class=after2></p>
-	</div>
-	<div class= 'about-list'>
-		<ul class='about-list-items'>
-			<li>Happily Married</li>
-			<li>Thinkpad Enthusiast</li>
-			<li>PC Gamer</li>
-			<li>Love TMUX & VIM</li>
-			<li>Favourite Artis - Frank Ocean</li>
-			<li>Favourite Podcast - Darknet Diaries</li>
-			<li>Favourite Film - Pulp Fiction</li>
-		</ul>
-	<div class='about-img2'>
-		<div class='img-5'><img src='static/img/blond.jpg'/></div>
-		<div class='img-6'><img src='static/img/darknet.jpg'/></div>
-		<div class='img-7'><img src='static/img/gamer.jpg'/></div>
-		<div class='img-8'><img src='static/img/pulp.jpg'/></div>
-	</div>
-</div>
-</section>
-<section id='skills' class='skills-section'>
-<div class='skills-container'>
-	<div class='skills-heading'>
-		<h1> Systems I work with on a daily basis</h1>
-		<p class=after2></p>
-	</div>
-	<div class='skills-img'>
-		<div class='img-1'><img src='static/img/Linux1.png'/></div>
-		<div class='img-2'><img src='static/img/azurelogo.svg'/></div>
-		<div class='img-3'><img src='static/img/Logo-docker.svg'/></div>
-		<div class='img-4'><img src='static/img/winserver4.svg'/></div>
-	</div>
-	<div class='skills-list-heading'>
-		<h1> My career objectives </h1>
-		<p class='after2'></p>
-	</div>
-</div>
-<div class='skills-statement-container'>
-	<div class='skills-statement'>
-		<h2 class=skills-h2> My ambition is to become a DevOps Engineer - I really enjoy maintaining and automating systems. </h2>
-		<div class='skills-h2-img'><img src='static/img/devops.jpg'/></div>
-	</div>
-	<div class='skills-statement2'>
-		<div class='skills2-h2-img'><img src='static/img/python.jpg'/></div>
-		<h1 class=skills-h2> I'm currently learning Python - I try to use this daily to create scripts and I've also used Flask to build this websites backend.</h2>
-	</div>
-	<div class='skills-statement3'>
-		<h1 class=skills-h2> I've also started learning Ansible and Jenkins! Which is going to be implimented into the workflow at my current job. </h2>
-		<div class='skills3-h2-img'><img src='static/img/ansible.jpg'/></div>
-	</div>
-</div>
-</section>
-<section id='footer' class='footer-section'
-<div class='footer'>
-	<div class='footer-item footer-one'></div>
-	<div class='footer-item footer-two'>
-		<h1>Contact me</h1>
-		<p class='after3'></p>
-		<div class='social-media'>
-			<i href='https://github.com/Pigstah' class='fab fa-github-square'></i>
-			<i href=mailto:matthew.pigram2@gmail.com?subject="Contact" class='fas fa-envelope-square'></i>
-			<i href='https://www.linkedin.com/in/matthew-pigram-07a57354/' class='fab fa-linkedin'></i>
-		</div>
-	</div>
-	<div class='footer-item footer-three'></div>
-</div>
-</section>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Pig.Code</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/fontawesome/css/all.css" />
+  </head>
+  <body>
+    <section id="menu" class="menu-section">
+      <div class="menu-container">
+        <nav class="navbar">
+          <a href="#menu" class="logo"><img src="static/img/pig3.png"/></a>    
+           <span class="navbar-toggle" id="js-navbar-toggle">
+             <i class="fas fa-bars"></i>
+           </span>
+          <ul class="main-nav" id="js-menu">
+            <li>
+              <a href="#about" class="nav-links">About</a>
+            </li>
+            <li>
+              <a href="#skills" class="nav-links">Skills</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-links">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section id="header" class="header-section">
+      <div class="header-container">
+        <div class="header">
+          <h1>Matthew Pigram</h1>
+          <p class="after1"></p>
+          <h2 class="title">Linux/Windows System Administrator</h2>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-me">
+          <h1>Get to know me...</h1>
+          <p class="after2"></p>
+      </div>
+      <div class="about-blurred-container">  
+	<div class="about-blurred-img">
+          <img src="static/img/blond.jpg" />
+          <h2>Favourite Artist</h2>
+          <h3>Frank Ocean</h3>
+        </div>
+        <div class="about-blurred-img">
+          <img src="static/img/gamer.jpg" />
+          <h2>PC</h2>
+          <h3>Gamer</h3>
+        </div>
+        <div class="about-blurred-img">
+          <img src="static/img/wedding.jpeg" />
+          <h2>Happily</h2>
+          <h3>Married</h3>
+        </div>
+        <div class="about-blurred-img">
+          <img src="static/img/thinkpad1.png" />
+          <h2>Thinkpad</h2>
+          <h3>Enthusiast</h3>
+        </div>
+        <div class="about-blurred-img">
+          <img src="static/img/pulp.jpg" />
+          <h2>Favourite Film</h2>
+          <h3>Pulp Fiction</h3>
+        </div>
+        <div class="about-blurred-img">
+          <img src="static/img/darknet.jpg" />
+          <h2>Favourite Podcast</h2>
+          <h3>Darknet Diaries</h3>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills-section">
+      <div class="skills-container">
+        <div class="skills-heading">
+          <h1>Systems I work with on a daily basis</h1>
+          <p class="after2"></p>
+        </div>
+        <div class="skills-img">
+          <div class="img-1"><img src="static/img/Linux1.png" /></div>
+          <div class="img-2"><img src="static/img/azurelogo.svg" /></div>
+          <div class="img-3"><img src="static/img/Logo-docker.svg" /></div>
+          <div class="img-4"><img src="static/img/actions.png" /></div>
+        </div>
+        <div class="skills-list-heading">
+          <h1>My career objectives</h1>
+          <p class="after2"></p>
+        </div>
+      </div>
+      <div class="skills-statement-container">
+        <div class="skills-statement">
+	  <h2 class="skills-h2">
+            My ambition is to become a DevOps Engineer - I really enjoy
+            maintaining and automating systems. My current role has just
+            progressed more into a Devops role and I'm learning a lot!
+          </h2>
+          <div class="skills-mobile-img">
+            <img src="static/img/devops1.png" />
+          </div>
+          <div class="skills-desktop-img">
+            <img src="static/img/devops.jpg" />
+          </div>
+        </div>
+        <div class="skills-statement">
+          <h1 class="skills-h2">
+            I'm currently learning Python - I try to use this daily to create
+            scripts and I've also used Flask to build this websites backend.
+          </h1>
+          <div class="skills-mobile-img">
+            <img src="static/img/python2.jpg" />
+          </div>
+          <div class="skills-desktop-img">
+            <img src="static/img/python.jpg" />
+          </div>
+        </div>
+        <div class="skills-statement">
+          <h1 class="skills-h2">
+            I've also started learning Ansible and Github Actions! Which is
+            going to be implimented into the workflow at my current job.
+          </h1>
+          <div class="skills-mobile-img">
+            <img src="static/img/ansible1.png" />
+          </div>
+          <div class="skills-desktop-img">
+            <img src="static/img/actions1.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="download" class="download-section">
+        <div class="download-header">
+          <h1>Contact me & download my CV below</h1>
+          <p class="after2"></p>
+        </div>
+	    <div class='download-pdf'>
+		    <a href="static/download/wed.jpg" download>
+			    <button class="btn"><i class="fa fa-download"></i> Download</button>
+		    </a>
+	    </div>
+    </section>
+    </section>
+    <section id="contact" class="footer-section"><div class="footer">
+      <div class="footer-item footer-one"></div>
+      <div class="footer-item footer-two">
+        <div class="social-media">
+          <a
+            href="https://github.com/Pigstah"
+            class="clickable"
+            id="js-clickable"
+            ><i class="fab fa-github-square"></i
+          ></a>
+          <a
+            href='mailto:matthew.pigram2@gmail.com?subject="Contact'
+            class="clickable"
+            id="js-clickable"
+            ><i class="fas fa-envelope-square"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/matthew-pigram-07a57354/"
+            class="clickable"
+            id="js-clickable"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-item footer-three"></div>
+    </section>
+    <script src="/static/scripts/scripts.js" type"text/javascript">
+    </script>
+  </body>
 </html>

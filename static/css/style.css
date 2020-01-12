@@ -54,12 +54,12 @@ body {
 }
 
 .navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
+  position: relative;
+  float: right;
+  right: 25px;
   cursor: pointer;
   font-size: 24px;
-  margin-top: 10px;
+  margin: 10px;
 }
 
 .active {
@@ -121,11 +121,8 @@ body {
 /* Header Styling */
 
 .header-section {
-  padding-top: 3rem;
-  padding-right: 3rem;
-  padding-left: 3em;
-  padding-bottom: 3rem;
   background-color: #ffcc00;
+  padding: 3rem;
 }
 
 .header-container {
@@ -163,12 +160,12 @@ body {
   }
 }
 .about-section {
-	background-color: #ffcc00;
+  background-color: #ffcc00;
+  padding: 12px;
 }
 
 /* About Styling */
 .about-me h1 {
-  font-size: 2em;
   font-weight: bold;
   padding: 3rem;
   text-align: center;
@@ -181,6 +178,11 @@ body {
   width: 12em;
   margin: auto;
 }
+
+.about-blurred-container {
+  padding-top: 5rem;
+}
+
 .about-blurred-img {
   height: auto;
   display: block;
@@ -257,7 +259,7 @@ body {
     transition: 0.3s;
     margin: 10px;
   }
-  
+
   .about-blurred-img img {
     border-radius: 45px;
     width: 60%;
@@ -265,8 +267,8 @@ body {
   }
 
   .about-blurred-container {
-	  display: flex;
-	  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .about-me h1 {
@@ -511,49 +513,147 @@ body {
   }
 }
 
+/*Download Styling*/
+
+.download-section {
+ background-color: #ffcc00;
+}
+
+.download-header {
+  padding: 3rem;
+  text-align: center;
+}
+
+.download-header h1 {
+ padding-bottom: 3rem;
+}
+
+.download-pdf {
+  display: block;
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+.btn {
+  background-color: #333;
+  border: none;
+  color: #ffcc00;
+  padding: 12px 30px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .download-section {
+    background-color: #ffcc00;
+  }
+
+  .download-header h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+
+  .after2 {
+    content: '';
+    background: #333;
+    height: 12px;
+    width: 12em;
+    margin: auto;
+  }
+
+  .download-pdf {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    padding-bottom: 25px;
+    margin-top: 50px;
+  }
+
+  .btn {
+    background-color: #333;
+    border: none;
+    color: #ffcc00;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .btn:hover {
+    background-color: #000;
+  }
+}
+
 /* Footer Styling */
 
 .footer-section {
-  display: flex;
-  justify-content: space-between;
+ background-color: #ffcc00;
 }
 
 .footer-item {
-  /*border: 1px solid #fff;*/
-  background-color: #ffcc00;
-  height: 250px;
-  width: 500px;
-}
-
-.footer-item h1 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+ display: block;
+ width: 100%;
 }
 
 .social-media {
-  display: flex;
-  justify-content: space-evenly;
-  margin-right: 2rem;
-  margin-left: 2rem;
-  margin-top: 5rem;
-  font-size: 55px;
+ display: block;
+ text-align: center;
+ font-size: 55px;
 }
 
 .clickable {
-  color: #333;
+ color: #333;
 }
 
-.after3 {
-  content: '';
-  background: #333;
-  height: 12px;
-  width: 11em;
-  margin: auto;
-}
+@media screen and (min-width: 768px) {
+  .footer-section {
+    background-color: #ffcc00;
+  }
 
-.footer-one,
-.footer-three {
-  background-color: #ffcc00;
-  flex: 2;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-item {
+    /*border: 1px solid #fff;*/
+    height: 250px;
+    width: 500px;
+  }
+
+  .footer-item h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    font-size: 55px;
+  }
+
+  .clickable {
+    color: #333;
+  }
+
+  .after3 {
+    content: '';
+    background: #333;
+    height: 12px;
+    width: 11em;
+    margin: auto;
+  }
+
+  .footer-one,
+  .footer-three {
+    background-color: #ffcc00;
+    flex: 2;
+  }
 }
