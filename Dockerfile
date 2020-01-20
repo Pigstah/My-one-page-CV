@@ -15,5 +15,6 @@ RUN python3 -m pip install --upgrade pip && \
 
 COPY . /app
 
-CMD python3 app.py
+CMD python3 app.py \
+    echo sup
 
