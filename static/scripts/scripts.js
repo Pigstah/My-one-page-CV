@@ -6,11 +6,11 @@ navBarToggle.addEventListener('click', function () {
 	mainNav.classList.toggle('active')
 });
 
-$( 'js-menu' ).on("click", function(){
-  $('#menu').click();
+$(document).ready(function(){
+
+$('.nav-links').on("click", function(){
+	$('.nav-links').hide();
 });
 
-
-
-
+});
 
