@@ -6,12 +6,12 @@ navBarToggle.addEventListener('click', function() {
   mainNav.classList.toggle('active');
 });
 
-$(document).ready(function() {
-  $('.nav-links').on('click', function() {
-    $('.nav-links').hide();
+//$(document).ready(function() {
+  //$('.nav-links').on('click', function() {
+    //$('.nav-links').hide();
 
-    $('js-menu').on('click', function() {
-      $('nav-links').removeClass('display:none;');
-    });
-  });
-});
+    //$('js-menu').on('click', function() {
+      //$('nav-links').removeClass('display:none;');
+   // });
+ // });
+//});
