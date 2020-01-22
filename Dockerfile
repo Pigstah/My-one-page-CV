@@ -11,10 +11,9 @@ COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 
 RUN python3 -m pip install --upgrade pip && \
-    python3 -m pip install Flask
+    python3 -m pip install Flask gunicorn
 
 COPY . /app
 
-CMD python3 app.py \
-    echo sup
+CMD gunicorn -b 0.0.0.0:5000 app
 
